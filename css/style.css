@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7px;
+    color: #777;
+    padding: 30px;
+}
+
+.header {
+    background-image: linear-gradient(90deg, rgba(250, 116, 79,.62), rgba(11, 86, 91,.6)),url('../images/img-1.jpg');
+    background-size: cover;
+    height: 90vh;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    position: relative;
+
+}
+
+
+    
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+
+.header__menu {
+    position: absolute;
+    top: 60px;
+    right: 150px;   
+}
+
+.header__menu-option:link,
+.header__menu-option:visited {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px;
+    z-index: 10;
+}
+
+.header__main-primary {
+    position: absolute;
+    line-height: 1.7;
+    top: 40%;
+    left: 10%;
+}
+
+.row {
+    max-width: 1140px;
+  margin: 0 auto;
+    position: relative;
+    
+}
+.col-1-of-2 {
+    width: 535px;
+    float: left;
+}
+
+.header__primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header__primary-main {
+    display: block;
+    font-weight: 800;
+    letter-spacing: 35;
+}
+
+.header__primary-sub {
+    font-size: 20px;
+    letter-spacing: 30;
+    padding: 50px;
+    font-weight: 700;
+    margin-top: -50px;
+}
+
+.header__paragraph {
+    text-transform: initial;
+}
+
+.btn:link,
+btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 27px;
+    margin-top: 40px;
+    display: inline-block;
+    border-radius: 40px;
+    transition: all 1s;
+    position: relative;
+}
+
+.btn-white {
+ /* background-image: linear-gradient(90deg, rgba(0, 197, 158), rgb(255, 140, 63));  */
+    /* background-color: rgb(168, 28, 23); */
+    background-color: #268F71;
+   
+    color: #fff;
+    margin-top: -20px;
+   
+}
+
+.header__image {
+    margin-top: -360px;
+   
+    opacity: .78;
+}
+
+
+.gradient-style {
+    position: absolute;
+    margin-top: -980px;
+    padding: 600px;
+    padding-left: 600px;
+    padding-right: 300px;
+    
+    
+    
+    margin-left: 150px;
+    border-radius: 188px;
+    background-image: linear-gradient(90deg, rgba(2, 66, 73,.6), rgba(11, 86, 91,.6));
+    transform: rotate(27deg);
+    z-index: -1;
+}
+
+
+
