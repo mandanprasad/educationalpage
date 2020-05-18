@@ -38,30 +38,36 @@ body {
 
 .header {
   /* background-image: linear-gradient(to right bottom,  rgba(41, 152, 255), #5643fa),url('../images/img-1.jpg'); */
+  
   background-size: cover;
   height: 90vh;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   position: relative;
+
 }
 
 @media only screen and (max-width: 600px) {
   .header {
     padding: 280px 0; margin-left: 30px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
+  
 
-a {
+a{
   outline: none;
   text-decoration: none;
 }
 
+
 .header__menu {
   position: absolute;
-  top: 8%;
-  right: 6%;
-  z-index: 6;
+  top: 60px;
+  right: 110px;   
+  z-index: 10;
+  
 }
+
 @media only screen and  (max-width: 600px) {
   .header__menu {
     right: 10%;
@@ -89,6 +95,7 @@ a {
   box-shadow: 0 10px 20px #333333;
   -webkit-transform: rotate(-5deg);
   transform: rotate(-5deg);
+  z-index: 6;
   }
 }
 
@@ -101,15 +108,13 @@ a {
   transform: rotate(-5deg);
 }
 
-
-
 .header-margin-top {
-  margin-top: -4rem;
-  margin-right: 4rem;
+  margin-top: -40px;
+  margin-right: 40px;
 }
- 
+
 @media only screen and (max-width: 600px) {
-  .header-margin-top {margin-top: -130px; font-size: 18px;
+  .header-margin-top {margin-top: -170px; font-size: 18px;
   margin-left: 20px;
   font-size: 20px;
   width: 400px;
@@ -117,24 +122,22 @@ a {
 }
 
 
-
-
-
 .header__main-primary {
   position: absolute;
+  
   line-height: 1.7;
   top: 40%;
   left: 10%;
 }
 
 .row {
-  max-width: 114rem;
-  margin: 0 auto;
+  max-width: 1140px;
+margin: 0 auto;
   position: relative;
+  
 }
-
 .col-1-of-2 {
-  width: 53.5rem;
+  width: 535px;
   float: left;
 }
 
@@ -143,6 +146,7 @@ a {
     width: 500px;
   }
 }
+
 
 .header__primary {
   color: #333333;
@@ -156,11 +160,11 @@ a {
 }
 
 .header__primary-sub {
-  font-size: 2rem;
+  font-size: 20px;
   letter-spacing: 30;
-  padding: 5rem;
+  padding: 50px;
   font-weight: 700;
-  margin-top: -5rem;
+  margin-top: -50px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -173,25 +177,27 @@ a {
   }
 }
 
+
 .header__paragraph {
   text-transform: initial;
-  font-weight: 500;
-  color: #333333;
+  font-weight: 400;
+ 
 }
+
 @media only screen and (max-width: 600px) {
   .header__paragraph{font-size: 25px; width:450px;}
 }
+
 
 .btn:link,
 btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: .7rem 2.7rem;
-  margin-top: 4rem;
+  padding: 7px 27px;
+  margin-top: 40px;
   display: inline-block;
-  border-radius: 4rem;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  border-radius: 40px;
+  transition: all 1s;
   position: relative;
 }
 
@@ -200,26 +206,23 @@ btn:visited {
     padding: 7px 27px;
     margin-top: 40px;
     border-radius: 40px;
+    font-size: 22px;
   }
 }
 
 .btn-white {
-  /* background-image: linear-gradient(90deg, rgba(0, 197, 158), rgb(255, 140, 63));  */
+/* background-image: linear-gradient(90deg, rgba(0, 197, 158), rgb(255, 140, 63));  */
   /* background-color: rgb(168, 28, 23); */
-  background-image: -webkit-gradient(linear, left top, right top, from(#ae0ee9), to(#2e19a7));
-  background-image: linear-gradient(90deg, #ae0ee9, #2e19a7);
+  background-image: linear-gradient(90deg,#ae0ee9,#2e19a7);
+ 
   color: #fff;
-  margin-top: -2rem;
-  position: relative;
-}
-
-.btn-white:hover {
-  -webkit-transform: translateY(-10px);
-  transform: translateY(-10px);
+  margin-top: -20px;
+ 
 }
 
 .header__image {
-  margin-top: -36rem;
+  margin-top: -360px;
+  margin-left: 60px;
   opacity: .78;
 }
 @media only screen and (max-width: 600px) {
@@ -232,15 +235,14 @@ btn:visited {
   }
 }
 
+
 .gradient-style {
   position: absolute;
   margin-top: -980px;
   padding: 600px;
   padding-left: 600px;
   padding-right: 300px;
-  
-  
-  
+
   margin-left: 150px;
   border-radius: 188px;
   background-image: linear-gradient(90deg,#ff5200,#20007e);
@@ -252,10 +254,8 @@ btn:visited {
   .gradient-style {
     margin-top: 0px;
     padding: 0px;
-    padding-left:;
+    padding-left:0;
     padding-right: 300px;
-    
-    
     
     margin-left: 150px;
     border-radius: 188px;
@@ -270,19 +270,19 @@ btn:visited {
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 22px;
   font-weight: 700;
   -webkit-background-clip: text;
   color: transparent;
+  
   line-height: 1.7;
+  
 }
 
 .u-margin-bottom {
-  margin-top: -20rem;
+  margin-top: -200px;
 }
 
-
-.header__image {width: 10px;height: 10px;}
 .section__recent {
   background-image:  linear-gradient(180deg, rgba(243, 237, 237, 0.9) 0%,rgba(243, 237, 237, 0.9) 30% , rgba(32, 0, 126, .9) 30%);
   padding: 60px 0;
@@ -550,7 +550,7 @@ canvas{
   background-color: #f7f7f7;
 }
 @media only screen and (max-width: 600px)  {
-  .section__explore {padding-bottom: 1100px;}
+  .section__explore {padding-bottom: 900px;}
 }
 
 
@@ -570,7 +570,7 @@ canvas{
   margin-top: 2rem;
 }
 @media only screen and (max-width: 600px) {
-  .col-1-of-4 {width: 45%; }
+  .col-1-of-4 {width: 40%; }
 }
 
 .explore__categories {
@@ -603,8 +603,8 @@ canvas{
     color: #fff;
     -webkit-box-shadow: 0 10px 20px #333333;
     box-shadow: 0 10px 20px #333333;
-    width: 96%;
-    height: 430px;
+    width: 260px;
+    height: 350px;
     margin-bottom: 20px;
     
     
@@ -636,11 +636,11 @@ canvas{
 }
 
 @media only screen and (max-width: 600px) {
-  .icon {width: 100px; height: 100px;}
+  .icon {width: 70px; height: 70px;}
 }
 
 .essay__icon {
-  background-image: url(../images/essay.png);
+  background-image: url('../images/essay.png');
 }
 
 .explore__card {
@@ -680,6 +680,9 @@ canvas{
 .icon {
   margin-top: -5px;
 }
+@media only screen and (max-width: 600px) {
+  .icon{margin-top: -30px;}
+}
 
 .right-arrow {
   position: absolute;
@@ -691,7 +694,7 @@ canvas{
 }
 
 @media only screen and (max-width: 600px) {
-  .right-arrow {margin-left: 200px;font-size: 47px;margin-top: 10%;}
+  .right-arrow {margin-left: 170px;font-size: 47px;margin-top: -10;;}
 }
 
 .explore__card-heading {
@@ -700,7 +703,7 @@ canvas{
 }
 
 @media only screen and (max-width: 600px) {
-  .explore__card-heading {margin-top: 30px;}
+  .explore__card-heading {margin-top: 10px;}
 }
 
 @media only screen and (max-width: 600px) {
