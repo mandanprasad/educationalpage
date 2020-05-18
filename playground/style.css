@@ -1,0 +1,23 @@
+html,body {font-size: 16px;}
+
+.navigation {
+
+}
+
+.navigation__checkbox {
+
+}
+
+.navigation__button {
+
+}
+
+.navigation__background {
+    height: 60px;
+    width: 60px;
+    border-radius: 60%;
+    position: fixed;
+    top: 65px;
+    right: 65px;
+    background-color: red;
+} 
